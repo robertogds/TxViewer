@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Widget.Tx.CollapsingToolbar"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:titleEnabled="false">
+
+        <RelativeLayout
+            android:id="@+id/trade_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="72dp"
+            android:paddingTop="70dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:theme="@style/PlainTheme" >
+
+            <!-- DATE -->
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_gray"
+                android:textSize="16sp"
+                android:text="@string/wallet_balance"
+                tools:ignore="MissingPrefix"
+                tools:text="Wallet Balance" />
+
+
+            <!-- VALUE -->
+            <TextView
+                android:id="@+id/final_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/balance"
+                android:background="@drawable/rounded_view_green"
+                android:gravity="center_horizontal|center_vertical"
+                android:minWidth="140dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix"
+                tools:text="0.1234567890 BTC" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+</android.support.design.widget.AppBarLayout>

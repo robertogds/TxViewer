@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Transaction List</string>
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+    <string name="loading_failed">Loading failed, please try again</string>
+    <string name="no_data_available">No transactions available</string>
+    <string name="retry">Retry</string>
+    <string name="wallet_balance">Wallet Balance</string>
+</resources>
