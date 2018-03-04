@@ -26,6 +26,11 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+/**
+ * Espresso UI test
+ *
+ * Should use a testing API or it will fail as soon as the final balance change
+ * */
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
