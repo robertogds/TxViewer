@@ -26,7 +26,7 @@ android:
     - extra-google-m2repository
 
     # Specify at least one system image
-    - sys-img-armeabi-v7a-android-24
+    - sys-img-armeabi-v7a-android-$EMULATOR_API_LEVEL
 
 before_script:
   - echo no | android create avd --force -n test -t android-$EMULATOR_API_LEVEL --abi armeabi-v7a
