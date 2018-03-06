@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/robertogds/TxViewer.svg?branch=master)](https://travis-ci.org/robertogds/TxViewer) 
+
 # TxViewer
 
 Simple example to demo a clean architecture based in MVVM using Blockchain multiaddress API endpoint. 
